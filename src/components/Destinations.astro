@@ -1,67 +1,107 @@
 ---
-import { Image } from 'astro:assets'
-import Coyhaique from '../assets/coyhaique.jpg'
-import SanRafael from '../assets/san-rafael.jpg'
-import GralCarrera from '../assets/gral-carrera.jpg'
+import { Image } from "astro:assets";
+import Coyhaique from "../assets/coyhaique.jpg";
+import SanRafael from "../assets/san-rafael.jpg";
+import GralCarrera from "../assets/gral-carrera.jpg";
 ---
 
-<section id="destinations" class="pb-5">
-  <div class="container">
+<section id="destinations" class="pb-5 section-bg">
+  <div class="container pt-3">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="pt-3 pb-5" style="font-size: 3rem; text-shadow: 1px 2px 4px rgba(0,0,0,0.8);" >Destinos de <span class="text-danger">la Región </span>de Aysén</h2>
-        <hr class="my-4 mb-5">
+        <h2
+          class="pt-5 pb-5"
+          style="font-size: 3rem; text-shadow: 1px 2px 4px rgba(0,0,0,0.8);"
+        >
+          Destinos de <span class="text-danger">la Región </span>de Aysén
+        </h2>
+        <hr class="my-4 mb-5" />
       </div>
     </div>
 
     <div class="row featurette align-items-center">
       <div class="col-md-7 pe-5">
-        <h2 class="featurette-heading align-items-center display-5 mb-5" style="text-shadow: 1px 2px 4px rgba(0,0,0,0.7);">Parque Nacional Laguna San Rafael</h2>
-        <p class="lead"><strong>¿Sabías que la tercera mayor reserva de
-          hielos del mundo, después de Antártica y Groenlandia está en Chile?</strong></p>
+        <h2
+          class="featurette-heading align-items-center display-5 mb-5"
+          style="text-shadow: 1px 2px 4px rgba(0,0,0,0.7);"
+        >
+          Parque Nacional Laguna San Rafael
+        </h2>
+        <p class="lead">
+          <strong
+            >¿Sabías que la tercera mayor reserva de hielos del mundo, después
+            de Antártica y Groenlandia está en Chile?</strong
+          >
+        </p>
       </div>
       <div class="col-md-5">
-        <Image 
+        <Image
           class="d-block w-100 h-50 rounded-1 border border-secondary"
           src={SanRafael}
           alt="Parque nacional Laguna San Rafael"
-        >
+        />
       </div>
     </div>
 
-    <hr class="featurette-divider mb-5 mt-5">
+    <hr class="featurette-divider mb-5 mt-5" />
 
     <div class="row featurette align-items-center">
       <div class="col-md-7 order-md-2 ps-5">
-        <h2 class="featurette-heading display-5 mb-5" style="text-shadow: 1px 2px 4px rgba(0,0,0,0.7);">Coyhaique</h2>
-        <p class="lead"><strong>A 50 minutos del aeropuerto Balmaceda, se
-          encuentra la ciudad de Coyhaique, capital regional de Aysén.</strong></p>
+        <h2
+          class="featurette-heading display-5 mb-5"
+          style="text-shadow: 1px 2px 4px rgba(0,0,0,0.7);"
+        >
+          Coyhaique
+        </h2>
+        <p class="lead">
+          <strong
+            >A 50 minutos del aeropuerto Balmaceda, se encuentra la ciudad de
+            Coyhaique, capital regional de Aysén.</strong
+          >
+        </p>
       </div>
       <div class="col-md-5 order-md-1">
-        <Image 
+        <Image
           class="d-block w-100 h-50 rounded-1 border border-secondary"
           src={Coyhaique}
           alt="ciudad de Coyhaique"
-        >
+        />
       </div>
     </div>
 
-    <hr class="featurette-divider mb-5 mt-5">
+    <hr class="featurette-divider mb-5 mt-5" />
 
     <div class="row featurette align-items-center">
       <div class="col-md-7 pe-5">
-        <h2 class="featurette-heading display-5 mb-5" style="text-shadow: 1px 2px 4px rgba(0,0,0,0.7);">Lago General Carrera Chelenco</h2>
-        <p class="lead"><strong>Chelenko significa “Aguas turbulentas”
-          nombre que dieron los Tehuelches al lago General Carrera.</strong></p>
+        <h2
+          class="featurette-heading display-5 mb-5"
+          style="text-shadow: 1px 2px 4px rgba(0,0,0,0.7);"
+        >
+          Lago General Carrera Chelenco
+        </h2>
+        <p class="lead">
+          <strong
+            >Chelenko significa “Aguas turbulentas” nombre que dieron los
+            Tehuelches al lago General Carrera.</strong
+          >
+        </p>
       </div>
       <div class="col-md-5">
-        <Image 
+        <Image
           class="d-block w-100 h-50 rounded-1 border border-secondary"
           src={GralCarrera}
           alt="Lago General Carrera Chelenco"
-        >
+        />
       </div>
     </div>
-    <hr class="featurette-divider mb-5 mt-5">
   </div>
 </section>
+
+<style>
+  .section-bg {
+    background-image: url("../../public/blob-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>

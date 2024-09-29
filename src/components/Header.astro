@@ -1,21 +1,41 @@
 ---
-import { Image } from 'astro:assets'
-import Header01 from '../assets/header-01.jpeg'
-import Header02 from '../assets/header-02.jpg'
-import Header03 from '../assets/header-03.jpg'
+import { Image } from "astro:assets";
+import Header01 from "../assets/header-01.jpeg";
+import Header02 from "../assets/header-02.png";
+import Header03 from "../assets/header-03.jpg";
 ---
 
 <header class="header">
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#carouselHeader" style="font-size: 1.5rem; font-weight: 600; color: #dddada;" ><u>Aysén</u></a>
-      <button class="navbar-toggler border-secondary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <a
+        class="navbar-brand"
+        href="#carouselHeader"
+        style="font-size: 1.5rem; font-weight: 600; color: #dddada;"
+        ><u>Aysén</u></a
+      >
+      <button
+        class="navbar-toggler border-secondary bg-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavDropdown"
+      >
         <ul class="navbar-nav lead">
           <li class="nav-item me-3">
-            <a class="nav-link ms-sm-3 ms-xs-3 active" aria-current="page" href="#carouselHeader">Home</a>
+            <a
+              class="nav-link ms-sm-3 ms-xs-3 active"
+              aria-current="page"
+              href="#carouselHeader">Home</a
+            >
           </li>
           <li class="nav-item me-3">
             <a class="nav-link" href="#about">Por Qué Patagonia</a>
@@ -34,179 +54,217 @@ import Header03 from '../assets/header-03.jpg'
     </div>
   </nav>
 
-  <div id="carouselHeader" class="carousel slide mb-6 w-100" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselHeader" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+  <div
+    id="carouselHeader"
+    class="carousel slide mb-6 w-100"
+    data-bs-ride="carousel"
+  >
     <div class="carousel-inner">
-      <div class="carousel-item active"><div class="image-overlay">
-  
-        <Image 
-        class="d-block w-100 "
-        src={Header01}
-        alt="Patagonia Chilena"
-      >
-      </div>
-        <div class="container">
-          <div class="carousel-caption text-start" style="padding-bottom: 20rem">
-            <h1 style="font-size: 3rem;">Bienvenidos a la <span class="text-danger">Patagonia Chilena</span></h1>
-            <p class="lead"><strong>Te invitamos a este viaje al fin del mundo</strong></p>
+      <div class="carousel-item active">
+        <div class="image-overlay">
+          <Image src={Header01} class="d-block w-100" alt="Patagonia Chilena" />
+          <div class="container">
+            <div
+              class="carousel-caption text-start"
+              style="padding-bottom: 20rem"
+            >
+              <h1 style="font-size: 3rem;">
+                Bienvenidos a la <span class="text-danger"
+                  >Patagonia Chilena</span
+                >
+              </h1>
+              <p class="lead">
+                <strong>Te invitamos a este viaje al fin del mundo</strong>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item"><div class="image-overlay">
-  
-        <Image 
-        class="d-block w-100"
-        src={Header02}
-        alt="Región de Aysén" 
-      >
-      </div>
-        <div class="container">
-          <div class="carousel-caption" style="padding-bottom: 20rem;">
-            <h1 style="font-size: 3rem;">Región de <span class="text-danger">Aysén</span></h1>
-            <p class="lead"><strong>Naturaleza y aventura en un solo lugar</strong></p>
+      <div class="carousel-item">
+        <div class="image-overlay">
+          <Image class="d-block w-100" src={Header02} alt="Región de Aysén" />
+          <div class="container">
+            <div class="carousel-caption" style="padding-bottom: 20rem;">
+              <h1 style="font-size: 3rem;">
+                Región de <span class="text-danger">Aysén</span>
+              </h1>
+              <p class="lead">
+                <strong>Naturaleza y aventura en un solo lugar</strong>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item"><div class="image-overlay">
-  
-        <Image 
-        class="d-block w-100"
-        src={Header03}
-        alt="Parajes de Aysén" 
-      >
-      </div>
-        <div class="container">
-          <div class="carousel-caption text-end" style="padding-bottom: 20rem">
-            <h1 style="font-size: 3rem;">Vive la <span class="text-danger">experiencia</span></h1>
-            <p class="lead"><strong>Explora y descubre los parajes de la Región de Aysén</strong></p>
+      <div class="carousel-item">
+        <div class="image-overlay">
+          <Image class="d-block w-100" src={Header03} alt="Parajes de Aysén" />
+          <div class="container">
+            <div
+              class="carousel-caption text-end"
+              style="padding-bottom: 20rem"
+            >
+              <h1 style="font-size: 3rem;">
+                Vive la <span class="text-danger">experiencia</span>
+              </h1>
+              <p class="lead">
+                <strong
+                  >Explora y descubre los parajes de la Región de Aysén</strong
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselHeader"
+      data-bs-slide="prev"
+    >
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselHeader"
+      data-bs-slide="next"
+    >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-</header>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#FA7268"
+    ><path
+      d="M500 80.7C358 68 0 4 0 4V0h1000v84.7c-216 23.3-358 8.6-500-4Z"
+      opacity=".3"></path><path
+      d="M500 65.7C358 53 0 4 0 4V0h1000v62.7c-216 23.3-358 15.6-500 3Z"
+      opacity=".5"></path><path
+      d="M500 50.7C358 38 0 4 0 4V0h1000v40.7C784 64 642 63.3 500 50.7Z"
+    ></path></svg
+  >
 
-<style>
-	.image-overlay {
-    position: relative;
-  }
+  <style>
+    .image-overlay {
+      position: relative;
+    }
 
-  .image-overlay::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(114,245,195);
-    background: linear-gradient(180deg, rgba(114,245,195,0.4738270308123249) 0%, rgba(240,95,71,0.4598214285714286) 100%);
-  }
+    .image-overlay::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(114, 245, 195);
+      background: linear-gradient(
+          180deg,
+          rgba(114, 245, 195, 0.6) 0%,
+          rgba(250, 114, 104, 0.4) 100%
+        ),
+        linear-gradient(
+          180deg,
+          rgba(240, 95, 71, 0.4) 90%,
+          rgba(250, 114, 104, 0.9) 99%
+        );
+    }
 
-  .navbar {
-      transition: background-color 0.3s ease; 
+    .navbar {
+      transition: background-color 0.3s ease;
     }
     .bg-transparent {
-      background-color: transparent !important; 
+      background-color: transparent !important;
     }
     .bg-solid {
-      background-color: #c78478 !important;
+      background-color: #f7857d !important;
       border-bottom: 1px solid #5c5b5b;
     }
 
-  nav a{
-    color: #fff;
-    text-shadow: 2px 1px 1px #000, 3px 1px 2px #222222;
-  }
-
-  .nav-link.active {
-    color: #fff;
-  }
-
-  .carousel-caption {
-    text-shadow: 2px 1px 1px #000;
-  }
-
-  .navbar-nav .nav-link {
-    position: relative;
-    transition: color 0.3s ease;
-  }
-
-  .navbar-nav .nav-link::after {
-    content: "";
-    position: absolute;
-    margin-bottom: 0.5rem;
-    color: #c7c5c5;
-    left: 0;
-    bottom: -3px;
-    width: 0%;
-    height: 2px;
-    background-color: #c7c5c5;
-    transition: width 0.3s ease;
-    box-shadow: 2px 1px 1px #252525;
-  }
-
-  .navbar-nav .nav-link:hover::after,
-  .navbar-nav .nav-link.active::after {
-    width: 100%;
-  }
-</style>
-
-<script>
-  window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar')
-    var scrollPosition = window.scrollY
-
-    // Cambia el fondo del navbar al hacer scroll
-    if (scrollPosition > 300) {
-      navbar?.classList.add('bg-solid')
-      navbar?.classList.remove('bg-transparent')
-    } else {
-      navbar?.classList.remove('bg-solid')
-      navbar?.classList.add('bg-transparent')
+    nav a {
+      color: #fff;
+      text-shadow:
+        2px 1px 1px #000,
+        3px 1px 2px #222222;
     }
-  })
 
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link')
+    .nav-link.active {
+      color: #fff;
+    }
 
-  navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-      // Remover la clase 'active' de todos los elementos
-      navLinks.forEach(link => link.classList.remove('active'))
-      // Agregar la clase 'active' solo al elemento clickeado
-      link.classList.add('active')
-    })
-  })
+    .carousel-caption {
+      text-shadow: 2px 1px 1px #000;
+    }
 
-  function ajustarTamañoImagen() {
-    const carousel = document.getElementById('carouselHeader')
-    const screenWidth = window.innerWidth
+    .navbar-nav .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+    }
 
-    // Ajustar el tamaño de la imagen según el ancho de la pantalla
-    const images = carousel?.querySelectorAll('.carousel-item img')
-    images?.forEach(img => {
-      if (screenWidth >= 576) {
-        img.classList.remove('isSmall')
-        img.setAttribute('height', '832')
+    .navbar-nav .nav-link::after {
+      content: "";
+      position: absolute;
+      margin-bottom: 0.5rem;
+      color: #c7c5c5;
+      left: 0;
+      bottom: -3px;
+      width: 0%;
+      height: 2px;
+      background-color: #c7c5c5;
+      transition: width 0.3s ease;
+      box-shadow: 2px 1px 1px #252525;
+    }
+
+    .navbar-nav .nav-link:hover::after,
+    .navbar-nav .nav-link.active::after {
+      width: 100%;
+    }
+  </style>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      var navbar = document.querySelector(".navbar");
+      var scrollPosition = window.scrollY;
+
+      // Cambia el fondo del navbar al hacer scroll
+      if (scrollPosition > 300) {
+        navbar?.classList.add("bg-solid");
+        navbar?.classList.remove("bg-transparent");
       } else {
-        
-        img.classList.add('isSmall')
-        img.setAttribute('height', '300')
+        navbar?.classList.remove("bg-solid");
+        navbar?.classList.add("bg-transparent");
       }
     });
-  }
-  // Ejecutar la función cuando se carga la página y cuando cambia el tamaño de la pantalla
-  window.addEventListener('load', ajustarTamañoImagen)
-  window.addEventListener('resize', ajustarTamañoImagen)
-</script>
+
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    navLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        // Remover la clase 'active' de todos los elementos
+        navLinks.forEach((link) => link.classList.remove("active"));
+        // Agregar la clase 'active' solo al elemento clickeado
+        link.classList.add("active");
+      });
+    });
+
+    function ajustarTamañoImagen() {
+      const carousel = document.getElementById("carouselHeader");
+      const screenWidth = window.innerWidth;
+
+      // Ajustar el tamaño de la imagen según el ancho de la pantalla
+      const images = carousel?.querySelectorAll(".carousel-item img");
+      images?.forEach((img) => {
+        if (screenWidth >= 576) {
+          img.classList.remove("isSmall");
+          img.setAttribute("height", "832");
+        } else {
+          img.classList.add("isSmall");
+          img.setAttribute("height", "300");
+        }
+      });
+    }
+    // Ejecutar la función cuando se carga la página y cuando cambia el tamaño de la pantalla
+    window.addEventListener("load", ajustarTamañoImagen);
+    window.addEventListener("resize", ajustarTamañoImagen);
+  </script>
+</header>
