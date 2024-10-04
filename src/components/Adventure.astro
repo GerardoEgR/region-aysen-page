@@ -1,40 +1,106 @@
-<section id="about">
+<section id="about" class="section-bg">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 offset-lg-2 mt-5">
-        <h2 class="pt-3 pb-5" style="font-size: 3rem; text-shadow: 1px 2px 4px rgba(0,0,0,0.8);">Naturaleza y <span class="text-danger">Aventura en </span>un solo lugar</h2>
-        <p class="lead pb-5"><strong>Descubre un lugar donde la vida fluye en armonía con la naturaleza y los sentidos se pierden en el verde de sus bosques, el turquesa de sus aguas, el azul de sus hielos milenarios y los miles de colores de la flora y fauna que allí habitan. No hay duda, los más de 800 kilómetros de ruta escénica de la patagonia por la Carretera Austral te dejarán sin aliento.</strong></p>
-        <p class="lead pb-5"><strong>Pero no te engañes, que la calma de Aysén también deja felices a los espíritus más aventureros. Ya sea realizando el increíble trekking a la cima de Cerro Castillo, navegando el lago General Carrera hasta las míticas Catedrales de Mármol, caminando sobre el glaciar Exploradores o recorriendo las pasarelas de Caleta Tortel, los más hiperactivos no tendrán espacio para aburrirse en este paraíso de prístinos paisajes y mucha aventura.</strong></p>
-        <p class="lead pb-5"><strong>Un destino natural por esencia, ya que la mitad de su territorio corresponde a Áreas Silvestres Protegidas, entre la que destaca el “Parque Nacional Laguna San Rafael”, declarado Reserva de la Biósfera por la UNESCO y la cumbre más alta de la Patagonia, el “Monte San Valentín”, con una altura de 4058 mts. Bellezas, que puedes visitar a través de navegaciones por sus gélidas aguas y terminar la aventura brindando con un vaso de wisky con hielo milenario.</strong></p>
+      <div class="col-lg-10 offset-lg-1 mt-5">
+        <h2
+          class="pt-3 pb-5 text-center"
+          style="font-size: 3rem; text-shadow: 1px 2px 4px rgba(0,0,0,0.8);"
+        >
+          Naturaleza y <span class="text-danger">Aventura en </span>un solo
+          lugar
+        </h2>
+        <p class="lead pb-5 firstLetter">
+          <strong
+            >Descubre un lugar donde la vida fluye en armonía con la naturaleza
+            y los sentidos se pierden en el verde de sus bosques, el turquesa de
+            sus aguas, el azul de sus hielos milenarios y los miles de colores
+            de la flora y fauna que allí habitan. No hay duda, los más de 800
+            kilómetros de ruta escénica de la patagonia por la Carretera Austral
+            te dejarán sin aliento.</strong
+          >
+        </p>
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-6 pe-5">
+            <p class="lead pb-5">
+              <strong
+                >Pero no te engañes, que la calma de Aysén también deja felices
+                a los espíritus más aventureros. Ya sea realizando el increíble
+                trekking a la cima de Cerro Castillo, navegando el lago General
+                Carrera hasta las míticas Catedrales de Mármol, caminando sobre
+                el glaciar Exploradores o recorriendo las pasarelas de Caleta
+                Tortel, los más hiperactivos no tendrán espacio para aburrirse
+                en este paraíso de prístinos paisajes y mucha aventura.</strong
+              >
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="lead pb-5">
+              <strong
+                >Un destino natural por esencia, ya que la mitad de su
+                territorio corresponde a Áreas Silvestres Protegidas, entre la
+                que destaca el “Parque Nacional Laguna San Rafael”, declarado
+                Reserva de la Biósfera por la UNESCO y la cumbre más alta de la
+                Patagonia, el “Monte San Valentín”, con una altura de 4058 mts.
+                Bellezas, que puedes visitar a través de navegaciones por sus
+                gélidas aguas y terminar la aventura brindando con un vaso de
+                wisky con hielo milenario.</strong
+              >
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
+
   <div class="parallax">
     <div class="container text-center text-white">
       <h1 class="pt-5 display-5 parax"><em>Dicen que...</em></h1>
-      <h1 class="mt-5 display-5 parax"><em><q>Quien se apura en la Patagonia pierde el tiempo</q></em></h1>
+      <h1 class="mt-5 display-5 parax">
+        <em><q>Quien se apura en la Patagonia pierde el tiempo</q></em>
+      </h1>
       <h1 class="mt-5 display-5 parax"><em>...y en Aysén eso es ley!</em></h1>
     </div>
   </div>
 </section>
 
 <style>
-	.parallax {
-		/* Ajusta la altura del parallax a tu gusto */
-		height: 400px;
-		/* La imagen de fondo se ajusta a la ventana */
-    background-image: linear-gradient(to top, rgba(252,81,52, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url(../assets/parallax-01.jpg) ;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		transition: background-image 0.5s ease-in-out;
-	}
+  .parallax {
+    /* Ajusta la altura del parallax a tu gusto */
+    height: 400px;
+    /* La imagen de fondo se ajusta a la ventana */
+    background-image: linear-gradient(
+        to top,
+        rgba(252, 81, 52, 0.2) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url(../assets/parallax-01.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+  }
 
-  .parax{
+  .parax {
     color: #fff;
-    text-shadow: 2px 1px 1px #000, 3px 2px 2px #000;
+    text-shadow:
+      2px 1px 1px #000,
+      3px 2px 2px #000;
+  }
+
+  .section-bg {
+    background-image: url("../../public/stacked-waves-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .firstLetter::first-letter {
+    font-size: 3rem; /* Tamaño mayor para la primera letra */
+    color: #343a40; /* Color opcional */
+    float: left; /* Flotar a la izquierda */
+    line-height: 0.2; /* Mantener el interlineado */
+    margin-left: 0.5em; /* Espacio entre la primera letra y el resto del texto */
   }
 </style>
-
