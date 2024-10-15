@@ -16,7 +16,7 @@ Este es un proyecto estático creado con Astro, destinado a proporcionar informa
 
 ## Tech Stack
 
-**HTLM, CSS, JavaScript.**
+**HTML, CSS, JavaScript.**
 
 ## Recursos Adicionales
 
