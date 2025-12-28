@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Paquetes Turísticos",
+    "description": "Tours completos con itinerarios personalizados por los lugares más emblemáticos de Aysén",
+    "icon": "src/assets/icons/box.png",
+    "price": "$450.000"
+  },
+  {
+    "title": "Hospedaje",
+    "description": "Alojamientos seleccionados con las mejores vistas y comodidades en la región",
+    "icon": "src/assets/icons/hostel.png",
+    "price": "$75.000/noche"
+  },
+  {
+    "title": "Traslados",
+    "description": "Transporte seguro y cómodo desde/hacia aeropuertos y destinos turísticos",
+    "icon": "src/assets/icons/travel.png",
+    "price": "$35.000"
+  },
+  {
+    "title": "Tours Especializados",
+    "description": "Expediciones a glaciares, trekking, kayak y observación de fauna silvestre",
+    "icon": "src/assets/icons/tour.png",
+    "price": "$120.000"
+  },
+  {
+    "title": "Gastronomía Regional",
+    "description": "Tours gastronómicos con degustación de platos típicos y productos locales",
+    "icon": "src/assets/icons/restaurant.png",
+    "price": "$45.000"
+  },
+  {
+    "title": "Guías Especializados",
+    "description": "Acompañamiento profesional con conocimiento profundo de historia y naturaleza",
+    "icon": "src/assets/icons/guide.png",
+    "price": "$60.000/día"
+  }
+]

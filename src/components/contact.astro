@@ -1,0 +1,198 @@
+<section
+  id="contact"
+  class="py-5"
+  style="background: linear-gradient(135deg, #1f2937 0%, #1e3a5f 50%, #0c4a6e 100%);"
+>
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2
+        class="display-4 fw-bold text-white mb-3"
+        style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);"
+      >
+        Reserva Tu Aventura
+      </h2>
+      <div
+        class="mx-auto mb-4"
+        style="width: 100px; height: 4px; background-color: #0ea5e9;"
+      >
+      </div>
+      <p
+        class="lead text-white-50 mx-auto"
+        style="max-width: 700px; text-shadow: 2px 2px 3px rgba(0,0,0,0.7);"
+      >
+        Completa el formulario y nos pondremos en contacto contigo en menos de
+        24 horas
+      </p>
+    </div>
+
+    <!-- Formulario -->
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        <div class="card shadow-lg border-0 rounded-4">
+          <div class="card-body p-4 p-md-5">
+            <form id="contactForm" novalidate>
+              <!-- Fila 1: Nombre y Email -->
+              <div class="row g-3 mb-3">
+                <div class="col-12 col-md-6">
+                  <label for="nombre" class="form-label fw-semibold text-dark">
+                    Nombre Completo <span class="text-danger">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg border-2"
+                    id="nombre"
+                    required
+                  />
+                  <div class="invalid-feedback">Este campo es requerido</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="email" class="form-label fw-semibold text-dark">
+                    Email <span class="text-danger">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control form-control-lg border-2"
+                    id="email"
+                    required
+                  />
+                  <div class="invalid-feedback">Email inválido</div>
+                </div>
+              </div>
+
+              <!-- Fila 2: Teléfono y Fecha -->
+              <div class="row g-3 mb-3">
+                <div class="col-12 col-md-6">
+                  <label
+                    for="telefono"
+                    class="form-label fw-semibold text-dark"
+                  >
+                    Teléfono <span class="text-danger">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    class="form-control form-control-lg border-2"
+                    id="telefono"
+                    required
+                  />
+                  <div class="invalid-feedback">Teléfono inválido</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="fecha" class="form-label fw-semibold text-dark">
+                    Fecha Preferida <span class="text-danger">*</span>
+                  </label>
+                  <input
+                    type="date"
+                    class="form-control form-control-lg border-2"
+                    id="fecha"
+                    required
+                  />
+                  <div class="invalid-feedback">Selecciona una fecha</div>
+                </div>
+              </div>
+
+              <!-- Servicio -->
+              <div class="mb-3">
+                <label for="servicio" class="form-label fw-semibold text-dark">
+                  Servicio de Interés <span class="text-danger">*</span>
+                </label>
+                <select
+                  class="form-select form-select-lg border-2"
+                  id="servicio"
+                  required
+                >
+                  <option value="">Selecciona un servicio</option>
+                  <option value="paquetes">Paquetes Turísticos</option>
+                  <option value="hospedaje">Hospedaje</option>
+                  <option value="traslados">Traslados</option>
+                  <option value="tours">Tours Especializados</option>
+                  <option value="gastronomia">Gastronomía Regional</option>
+                  <option value="guias">Guías Especializados</option>
+                </select>
+                <div class="invalid-feedback">Selecciona un servicio</div>
+              </div>
+
+              <!-- Mensaje -->
+              <div class="mb-4">
+                <label for="mensaje" class="form-label fw-semibold text-dark">
+                  Mensaje Adicional
+                </label>
+                <textarea
+                  class="form-control border-2"
+                  id="mensaje"
+                  rows="4"
+                  placeholder="Cuéntanos más sobre tu viaje ideal..."
+                ></textarea>
+              </div>
+
+              <!-- Botón -->
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg w-100 fw-bold shadow"
+                style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); border: none;"
+              >
+                Enviar Solicitud
+              </button>
+            </form>
+
+            <!-- Mensaje de Éxito -->
+            <div
+              id="successMessage"
+              class="alert alert-success border-2 border-success mt-4 d-none"
+              role="alert"
+            >
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill fs-4 me-2"></i>
+                <div class="fw-semibold">
+                  ¡Gracias! Tu solicitud ha sido enviada exitosamente. Nos
+                  contactaremos contigo pronto.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Validación del formulario
+  (function () {
+    "use strict";
+
+    const form = document.getElementById("contactForm") as HTMLFormElement;
+    const successMessage = document.getElementById("successMessage");
+
+    // Guard clause para mayor seguridad
+    if (!form) return;
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (form.checkValidity()) {
+        form.classList.remove("was-validated");
+        form.reset();
+
+        successMessage?.classList.remove("d-none");
+        setTimeout(() => successMessage?.classList.add("d-none"), 5000);
+      } else {
+        form.classList.add("was-validated");
+      }
+    });
+  })();
+</script>
+
+<style>
+  .form-control:focus,
+  .form-select:focus {
+    border-color: #0ea5e9;
+    box-shadow: 0 0 0 0.25rem rgba(14, 165, 233, 0.25);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+</style>

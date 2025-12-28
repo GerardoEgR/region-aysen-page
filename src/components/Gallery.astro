@@ -12,125 +12,133 @@ import Queulat from "../assets/parque-nacional-queulat.jpg";
 <section id="gallery-section" class="gallery-section pb-5 border-top">
   <div class="container">
     <div class="row justify-content-center mt-5">
-      <div class="col-lg-12 text-center mt-5">
+      <div class="text-center mb-5">
         <h2
-          class="pt-3 pb-5"
-          style="font-size: 3rem; text-shadow: 1px 2px 4px rgba(0,0,0,0.8);"
+          class="display-4 fw-bold mb-3"
+          style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);"
         >
-          Galería de <span class="text-danger">imperdibles</span> en Aysén
+          Galería de Aventuras
         </h2>
-      </div>
-    </div>
-
-    <div class="row no-gutters pswp-gallery" id="my-gallery">
-      <div class="col-lg-4 col-sm-6 gallery_item p-1">
-        <a
-          href={Catedral.src}
-          data-pswp-width="900"
-          data-pswp-height="750"
-          target="_blank"
+        <div
+          class="mx-auto mb-4"
+          style="width: 100px; height: 4px; background-color: #0ea5e9;"
         >
-          <Image
-            class="d-block w-100 h-100 rounded-1 border border-secondary"
-            src={Catedral}
-            alt="Catedral de Marmol"
-          />
-        </a>
+        </div>
+        <p class="lead mx-auto" style="max-width: 700px;">
+          Descubre la belleza salvaje de Aysén a través de nuestras expediciones
+        </p>
       </div>
 
-      <div class="col-lg-4 col-sm-6 gallery_item p-1">
-        <a
-          href={Tortel.src}
-          data-pswp-width="1200"
-          data-pswp-height="750"
-          target="_blank"
-        >
-          <Image
-            class="d-block w-100 h-100 rounded-1 border border-secondary"
-            src={Tortel}
-            alt="Caleta Tortel"
-          />
-        </a>
-      </div>
+      <div class="row no-gutters pswp-gallery" id="my-gallery">
+        <div class="col-lg-4 col-sm-6 gallery_item p-2">
+          <a
+            href={Catedral.src}
+            data-pswp-width="900"
+            data-pswp-height="750"
+            target="_blank"
+          >
+            <Image
+              class="d-block w-100 h-100 rounded-1 border border-secondary"
+              src={Catedral}
+              alt="Catedral de Marmol"
+            />
+          </a>
+        </div>
 
-      <div class="col-lg-4 col-sm-6 gallery_item p-1">
-        <a
-          href={Cascada.src}
-          data-pswp-width="1200"
-          data-pswp-height="750"
-          target="_blank"
-        >
-          <Image
-            class="d-block w-100 h-100 rounded-1 border border-secondary"
-            src={Cascada}
-            alt="Cascada Ventisquero Colgante"
-          />
-        </a>
-      </div>
+        <div class="col-lg-4 col-sm-6 gallery_item p-2">
+          <a
+            href={Tortel.src}
+            data-pswp-width="1200"
+            data-pswp-height="750"
+            target="_blank"
+          >
+            <Image
+              class="d-block w-100 h-100 rounded-1 border border-secondary"
+              src={Tortel}
+              alt="Caleta Tortel"
+            />
+          </a>
+        </div>
 
-      <div class="col-lg-4 col-sm-6 gallery_item p-1">
-        <a
-          href={Cerro.src}
-          data-pswp-width="1200"
-          data-pswp-height="750"
-          target="_blank"
-        >
-          <Image
-            class="d-block w-100 h-100 rounded-1 border border-secondary"
-            src={Cerro}
-            alt="Cerro Castillo"
-          />
-        </a>
-      </div>
+        <div class="col-lg-4 col-sm-6 gallery_item p-2">
+          <a
+            href={Cascada.src}
+            data-pswp-width="1200"
+            data-pswp-height="750"
+            target="_blank"
+          >
+            <Image
+              class="d-block w-100 h-100 rounded-1 border border-secondary"
+              src={Cascada}
+              alt="Cascada Ventisquero Colgante"
+            />
+          </a>
+        </div>
 
-      <div class="col-lg-4 col-sm-6 gallery_item p-1">
-        <a
-          href={Patagonia.src}
-          data-pswp-width="1200"
-          data-pswp-height="750"
-          target="_blank"
-        >
-          <Image
-            class="d-block w-100 h-100 rounded-1 border border-secondary"
-            src={Patagonia}
-            alt="Parque nacional Patagonia"
-          />
-        </a>
-      </div>
+        <div class="col-lg-4 col-sm-6 gallery_item p-2">
+          <a
+            href={Cerro.src}
+            data-pswp-width="1200"
+            data-pswp-height="750"
+            target="_blank"
+          >
+            <Image
+              class="d-block w-100 h-100 rounded-1 border border-secondary"
+              src={Cerro}
+              alt="Cerro Castillo"
+            />
+          </a>
+        </div>
 
-      <div class="col-lg-4 col-sm-6 gallery_item p-1">
-        <a
-          href={Queulat.src}
-          data-pswp-width="1200"
-          data-pswp-height="750"
-          target="_blank"
-        >
-          <Image
-            class="d-block w-100 h-100 rounded-1 border border-secondary"
-            src={Queulat}
-            alt="Parque nacional Queulat"
-          />
-        </a>
+        <div class="col-lg-4 col-sm-6 gallery_item p-2">
+          <a
+            href={Patagonia.src}
+            data-pswp-width="1200"
+            data-pswp-height="750"
+            target="_blank"
+          >
+            <Image
+              class="d-block w-100 h-100 rounded-1 border border-secondary"
+              src={Patagonia}
+              alt="Parque nacional Patagonia"
+            />
+          </a>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 gallery_item p-2">
+          <a
+            href={Queulat.src}
+            data-pswp-width="1200"
+            data-pswp-height="750"
+            target="_blank"
+          >
+            <Image
+              class="d-block w-100 h-100 rounded-1 border border-secondary"
+              src={Queulat}
+              alt="Parque nacional Queulat"
+            />
+          </a>
+        </div>
       </div>
     </div>
   </div>
+
+  <style>
+    .gallery_item:hover {
+      overflow: hidden;
+      transform: scale(1.1) rotate(3deg) translateY(-10px);
+      transition: all 0.2s ease-in-out;
+    }
+  </style>
+
+  <script>
+    import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: "#my-gallery",
+      children: "a",
+      pswpModule: () => import("photoswipe"),
+    });
+    lightbox.init();
+  </script>
 </section>
-
-<style>
-  .gallery_item:hover {
-    overflow: hidden;
-    transform: scale(1.1) rotate(3deg) translateY(-10px);
-    transition: all 0.2s ease-in-out;
-  }
-</style>
-
-<script>
-  import PhotoSwipeLightbox from "photoswipe/lightbox";
-
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: "#my-gallery",
-    children: "a",
-    pswpModule: () => import("photoswipe"),
-  });
-  lightbox.init();
-</script>

@@ -8,11 +8,19 @@ import Header03 from "../assets/header-03.jpg";
 <header class="header">
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a
-        class="navbar-brand"
-        href="#carouselHeader"
-        style="font-size: 1.5rem; font-weight: 600; color: #dddada;"
-        ><u>Aysén</u></a
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="64"
+        height="64"
+        viewBox="0 0 56 56"
+        style="width: 2.3rem; padding-right: 5px;"
+        ><path
+          fill="#ffffff"
+          d="M6.156 21.285c3.375-1.078 6.868-1.617 10.196-1.617c4.312 0 7.476.68 11.554.68c4.219 0 6.844-2.86 6.844-6.586c0-3.82-2.93-6.54-6.539-6.54c-2.672 0-5.016 1.665-6 3.891c-.375.774-.234 1.688.586 2.11c.75.375 1.664.14 2.156-.82c.516-1.196 1.781-2.133 3.258-2.133c1.945 0 3.469 1.359 3.469 3.492S30.203 17.3 27.906 17.3c-3.89 0-7.101-.703-11.554-.703c-3.82 0-7.688.68-11.133 1.78c-.985.282-1.36 1.126-1.125 1.946c.234.797 1.008 1.266 2.062.961m36.657 10.969c5.46 0 9.328-3.469 9.328-8.32c0-4.782-3.68-8.25-8.25-8.25c-4.242 0-7.383 2.953-7.946 6.843c-.14.961.399 1.735 1.242 1.852c.868.117 1.618-.422 1.805-1.524c.399-2.437 2.438-4.125 4.899-4.125c2.86 0 5.18 2.133 5.18 5.204c0 3.117-2.461 5.273-6.258 5.273c-7.149 0-14.86-4.078-24.235-4.078c-4.828 0-9.234.773-13.36 2.25c-.96.328-1.359 1.148-1.124 1.969c.234.797 1.031 1.289 2.062.937c3.82-1.453 7.805-2.086 12.422-2.086c9.352 0 16.336 4.055 24.235 4.055M27.93 48.777c3.61 0 6.398-2.672 6.398-6.492c0-5.531-5.648-8.625-16.055-8.625c-4.359 0-9.07.844-13.054 2.227c-.961.328-1.36 1.148-1.125 1.968c.234.797 1.031 1.29 2.062.938c3.727-1.336 7.899-2.062 12.118-2.062c8.507 0 13.007 2.132 13.007 5.554c0 2.156-1.5 3.446-3.351 3.446c-1.852 0-2.977-1.243-3.305-3.212c-.14-.867-.773-1.57-1.781-1.5c-1.055.07-1.477.962-1.336 1.899c.422 3.258 2.836 5.86 6.422 5.86"
+        ></path></svg
+      >
+      <a class="navbar-brand" href="#carouselHeader" style="font-size: 1.5rem;"
+        >Vientos del Sur</a
       >
       <button
         class="navbar-toggler border-secondary bg-white"
@@ -30,24 +38,30 @@ import Header03 from "../assets/header-03.jpg";
         id="navbarNavDropdown"
       >
         <ul class="navbar-nav lead">
-          <li class="nav-item me-3">
+          <li class="nav-item">
             <a
               class="nav-link ms-sm-3 ms-xs-3 active"
               aria-current="page"
               href="#carouselHeader">Home</a
             >
           </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#about">Por Qué Patagonia</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#services">Servicios</a>
           </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="#how-to-get">Cómo Llegar</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#we">Nosotros</a>
           </li>
-          <li class="nav-item me-3">
+          <li class="nav-item mx-3">
             <a class="nav-link" href="#destinations">Destinos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#gallery-section">Galería</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#reviews">Testimonios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
           </li>
         </ul>
       </div>
@@ -61,19 +75,16 @@ import Header03 from "../assets/header-03.jpg";
   >
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="image-overlay photo">
-          <Image src={Header01} class="d-block w-100" alt="Patagonia Chilena" />
+        <div class="image-overlay">
+          <Image
+            src={Header01}
+            class="d-block w-100 carousel-image"
+            alt="Patagonia Chilena"
+          />
           <div class="container">
-            <div
-              class="carousel-caption text-start"
-              style="padding-bottom: 20rem"
-            >
-              <h1 style="font-size: 3rem;">
-                Bienvenidos a la <span class="text-danger"
-                  >Patagonia Chilena</span
-                >
-              </h1>
-              <p class="lead">
+            <div class="carousel-caption text-start">
+              <h1 class="carousel-title">Bienvenidos a la Patagonia Chilena</h1>
+              <p class="carousel-text lead">
                 <strong>Te invitamos a este viaje al fin del mundo</strong>
               </p>
             </div>
@@ -81,34 +92,38 @@ import Header03 from "../assets/header-03.jpg";
         </div>
       </div>
       <div class="carousel-item">
-        <div class="image-overlay photo">
-          <Image class="d-block w-100" src={Header02} alt="Región de Aysén" />
+        <div class="image-overlay">
+          <Image
+            class="d-block w-100 carousel-image"
+            src={Header02}
+            alt="Región de Aysén"
+          />
           <div class="container">
-            <div class="carousel-caption" style="padding-bottom: 20rem;">
-              <h1 style="font-size: 3rem;">
-                Región de <span class="text-danger">Aysén</span>
-              </h1>
-              <p class="lead">
-                <strong>Naturaleza y aventura en un solo lugar</strong>
+            <div class="carousel-caption">
+              <h1 class="carousel-title">Región de Aysén</h1>
+              <p class="carousel-text lead">
+                <strong
+                  >Descubre la magia de la naturaleza y aventura en un solo
+                  lugar</strong
+                >
               </p>
             </div>
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <div class="image-overlay photo">
-          <Image class="d-block w-100" src={Header03} alt="Parajes de Aysén" />
+        <div class="image-overlay">
+          <Image
+            class="d-block w-100 carousel-image"
+            src={Header03}
+            alt="Parajes de Aysén"
+          />
           <div class="container">
-            <div
-              class="carousel-caption text-end"
-              style="padding-bottom: 20rem"
-            >
-              <h1 style="font-size: 3rem;">
-                Vive la <span class="text-danger">experiencia</span>
-              </h1>
-              <p class="lead">
+            <div class="carousel-caption text-end">
+              <h1 class="carousel-title">Vive la experiencia</h1>
+              <p class="carousel-text lead">
                 <strong
-                  >Explora y descubre los parajes de la Región de Aysén</strong
+                  >Explora los parajes más impresionantes de la Patagonia</strong
                 >
               </p>
             </div>
@@ -137,8 +152,101 @@ import Header03 from "../assets/header-03.jpg";
   </div>
 
   <style>
-    .photo {
-      mask-image: linear-gradient(180deg, rgb(250, 249, 249) 85%, transparent);
+    /* Mobile-first: Estilos base para móviles */
+    .carousel-image {
+      height: 400px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .carousel-caption {
+      padding-bottom: 3rem !important;
+      bottom: 0;
+    }
+
+    .carousel-title {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .carousel-text {
+      font-size: 1rem;
+    }
+
+    /* Tablets */
+    @media (min-width: 576px) {
+      .carousel-image {
+        height: 500px;
+      }
+
+      .carousel-caption {
+        padding-bottom: 5rem !important;
+      }
+
+      .carousel-title {
+        font-size: 2.5rem;
+      }
+
+      .carousel-text {
+        font-size: 1.25rem;
+      }
+    }
+
+    /* Tablets grandes y laptops */
+    @media (min-width: 768px) {
+      .carousel-image {
+        height: 600px;
+      }
+
+      .carousel-caption {
+        padding-bottom: 8rem !important;
+      }
+
+      .carousel-title {
+        font-size: 3rem;
+      }
+
+      .carousel-text {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Escritorio */
+    @media (min-width: 992px) {
+      .carousel-image {
+        height: 700px;
+      }
+
+      .carousel-caption {
+        padding-bottom: 12rem !important;
+      }
+
+      .carousel-title {
+        font-size: 3.5rem;
+      }
+
+      .carousel-text {
+        font-size: 1.75rem;
+      }
+    }
+
+    /* Pantallas grandes */
+    @media (min-width: 1200px) {
+      .carousel-image {
+        height: 832px;
+      }
+
+      .carousel-caption {
+        padding-bottom: 20rem !important;
+      }
+
+      .carousel-title {
+        font-size: 4rem;
+      }
+
+      .carousel-text {
+        font-size: 2rem;
+      }
     }
 
     .image-overlay {
@@ -152,36 +260,37 @@ import Header03 from "../assets/header-03.jpg";
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgb(109, 191, 242);
-      background: linear-gradient(
-          180deg,
-          rgba(42, 62, 89, 0.6) 0%,
-          rgba(163, 186, 217, 0.4) 100%
-        ),
-        linear-gradient(
-          180deg,
-          rgba(163, 186, 217, 0.5) 30%,
-          rgba(208, 226, 242, 0.5) 90%,
-          rgba(252, 251, 251, 0.5) 100%
-        );
+      background: rgba(31, 41, 55, 0.4);
+      z-index: 1;
+    }
+
+    .carousel-caption {
+      z-index: 2;
     }
 
     .navbar {
       transition: background-color 0.3s ease;
     }
+
     .bg-transparent {
       background-color: transparent !important;
     }
+
     .bg-solid {
-      background-color: #5a7e8c !important;
-      border-bottom: 1px solid #5c5b5b;
+      background: linear-gradient(
+        135deg,
+        #1f2937 0%,
+        #1e3a5f 50%,
+        #0c4a6e 100%
+      );
+      border-bottom: 1px solid #1f2937;
     }
 
     nav a {
       color: #fff;
       text-shadow:
-        2px 1px 1px #000,
-        3px 1px 2px #222222;
+        1px 1px 1px #000,
+        2px 2px 2px #222222;
     }
 
     .nav-link.active {
@@ -189,7 +298,9 @@ import Header03 from "../assets/header-03.jpg";
     }
 
     .carousel-caption {
-      text-shadow: 2px 1px 1px #000;
+      text-shadow:
+        1px 1px 1px #000,
+        3px 3px 3px #222222;
     }
 
     .navbar-nav .nav-link {
@@ -222,7 +333,6 @@ import Header03 from "../assets/header-03.jpg";
       var navbar = document.querySelector(".navbar");
       var scrollPosition = window.scrollY;
 
-      // Cambia el fondo del navbar al hacer scroll
       if (scrollPosition > 300) {
         navbar?.classList.add("bg-solid");
         navbar?.classList.remove("bg-transparent");
@@ -236,31 +346,9 @@ import Header03 from "../assets/header-03.jpg";
 
     navLinks.forEach((link) => {
       link.addEventListener("click", function () {
-        // Remover la clase 'active' de todos los elementos
         navLinks.forEach((link) => link.classList.remove("active"));
-        // Agregar la clase 'active' solo al elemento clickeado
         link.classList.add("active");
       });
     });
-
-    function ajustarTamañoImagen() {
-      const carousel = document.getElementById("carouselHeader");
-      const screenWidth = window.innerWidth;
-
-      // Ajustar el tamaño de la imagen según el ancho de la pantalla
-      const images = carousel?.querySelectorAll(".carousel-item img");
-      images?.forEach((img) => {
-        if (screenWidth >= 576) {
-          img.classList.remove("isSmall");
-          img.setAttribute("height", "832");
-        } else {
-          img.classList.add("isSmall");
-          img.setAttribute("height", "300");
-        }
-      });
-    }
-    // Ejecutar la función cuando se carga la página y cuando cambia el tamaño de la pantalla
-    window.addEventListener("load", ajustarTamañoImagen);
-    window.addEventListener("resize", ajustarTamañoImagen);
   </script>
 </header>
